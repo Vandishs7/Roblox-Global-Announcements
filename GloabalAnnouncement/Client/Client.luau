@@ -18,8 +18,8 @@ local function showButton(text)
 	textButton.Visible = false
 end
 
-ReplicatedStorage.Remotes:WaitForChild("glblanc").OnClientEvent:Connect(function(PL)
+ReplicatedStorage.remotes:WaitForChild("glblanc").OnClientEvent:Connect(function(PL)
 	if PL and PL.text then
 		showButton(PL.text)
 	end
-end)
+end)	
